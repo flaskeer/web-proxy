@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: web-proxy
+
+
+zuul:
+  routes:
+    resource:
+      path: /**
+      serviceId: proxy
+
+proxy:
+
+
